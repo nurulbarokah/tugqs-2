@@ -1,0 +1,46 @@
+ #include <stdio.h>
+
+int main(){
+
+int pil_bangunruang;
+float s, r, t, VolumeKubus, LuasLingkaran, VolumeSilinder, hasil;
+
+printf("bangun ruang\n\n1. volume kubus\n2. luas lingkaran\n3. volume silinder\n");
+printf("\nYangAkanAndaPilihAdalah:");
+scanf("%d",&pil_bangunruang);
+printf("\n\n");
+
+switch(pil_bangunruang)
+{
+case 1://voluma kubus
+printf("masukan nilai s:");
+scanf("%f", &s);
+
+hasil=s*s*s;
+printf("hasil=%f\n", s*s*s);
+
+break;
+
+case 2://luas lingkaran
+printf("masukan nilai r:");
+scanf("%f",&r);
+
+hasil=3.14*r*r;
+printf("Luas Lingkaran:%f\n", 3.14*r*r);
+
+break;
+
+case 3://volume silinder
+printf("masukan nilai r:");
+scanf("%f",&r);
+printf("masukan nilai t:");
+scanf("%f",&t);
+
+hasil=3.14*r*t;
+printf("volume silinder:%fn",3.14*r*t);
+
+break;
+}
+return 0;
+}
+
